@@ -1,0 +1,30 @@
+
+<hr><h1>Crea un nuevo articulo</h1><hr>
+
+<form method="post" action="/posts/create"  class="col rounded" id="create_posts">
+<input type="hidden" name="authenticity_token" value="DSCMXtmqP9AIc06xOCTMeOD2WnEGTQDGoaTySZkV3nAHq5kOH7emUQ5q+y7rLoCxrQanhR5N4ctJBOjkjBwxvg==" />
+ 
+    <div class="col-6">
+      <label for="title">Titulo</label>
+      <input name="title" class="form-control" id="title" arial-describedby="titlelHelp" placeholder="ingresa el nombre del articulo">
+    </div>
+
+    <div class="col-5">
+      <label for="date">Fecha de ingreso</label>
+      <input name="date" type="date" class="form-control">
+    </div>
+     <div class="col-6">
+      <label for="image_url">Imagen</label>
+      <input  name="image_url" class="form-control" id="image_url" arial-describedby="imageHelp" placeholder="ingresa el link de la imagen">
+    </div>
+
+    <div class="col-6 ">
+      <label for="content">Contenido</label>
+      <textarea name="content" class="form-control"></textarea>
+    </div><hr>
+
+    <button type="submit" class="btn btn-primary col-3">GUARDAR</button>
+    <button type="reset" class="btn btn-dark col-3">Borrar</button>
+
+  
+</form>

@@ -1,0 +1,18 @@
+<% if @post.errors.any?%>
+  <div id="error_explanation">
+    <h2>
+      <% pluralize(@post.errors.count, "error") %>
+      prohibited this user from being saved:
+    </h2>
+    <ul>
+      <% @post.errors.full_messages.each do |msg|%>
+        <li><%= msg%></li>
+      <% end %>
+    </ul>
+    <button  onclick="history.back()" class="btn btn-primary btn-lg">Volver</button>
+  </div>
+<%else%>
+  <h1>Articulo guardado con éxito</h1>
+  <button  onclick="history.back()" class="btn btn-primary btn-lg">Ingresar otro articulo</button>
+<%end%>
+
